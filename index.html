@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		Name:<input id="inputText" type="text" placeholder="Enter your Name Please" />
+		Hello <span id="outputText">World</span>!
+		<style type="text/css" rel="stylesheet">
+		#outputText{
+			text-decoration: underline;
+		}
+		</style>
+		<script>
+			var inputText = document.getElementById('inputText');
+			var outputText = document.getElementById("outputText");
+			
+			inputText.addEventListener('keyup', function(){
+			outputText.innerHTML = inputText.value;
+			});
+		</script>
+	</body>
+</html>
